@@ -39,7 +39,7 @@ const request = async ({
     });
     return response.json();
   } catch (err) {
-    console.log('Fetch Error :-S', err);
+    throw err;
   }
 };
 
